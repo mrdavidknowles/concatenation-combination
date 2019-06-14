@@ -1,0 +1,1 @@
+The goal of this project is a web app that takes multiple inputs and concatenates them, creating all combinations.
