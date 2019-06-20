@@ -22,5 +22,6 @@ function reset() {
   document.getElementById("txt3").value = "";
 }
 
+// When button is clicked, execute the combine or reset
 document.querySelector("#combine").addEventListener("click", combine);
 document.querySelector("#reset").addEventListener("click", reset);
