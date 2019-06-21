@@ -30,8 +30,13 @@ h2 {
 }
 
 /* Buttons */
-
 .btn {
   width: 120px;
   font-size: 1.2rem;
+}
+
+.btn:focus,
+.btn:active {
+  outline: none;
+  box-shadow: none;
 }

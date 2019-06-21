@@ -1,17 +1,17 @@
 function combine() {
-  // Take inputs txt1 and txt2
+  // Take inputs from textarea with id of txt1 and txt2
   var stringArray1 = document.getElementById("txt1").value.split("\n");
   var stringArray2 = document.getElementById("txt2").value.split("\n");
 
   combo = [];
 
-  // Combine txt1 and txt2, add to array
+  // Loop through, combine first line in txt1 with all in txt2, and so on, then add to array
   for (n = 0; n < stringArray2.length; n++) {
     for (i = 0; i < stringArray1.length; i++) {
       combo.push(stringArray1[i] + stringArray2[n]);
     }
   }
-  // Output the result of txt1 + txt2 in txt3
+  // Output the strings in the array onto their own lines in txt3
   document.getElementById("txt3").value = combo.join("\n");
 }
 
@@ -22,6 +22,6 @@ function reset() {
   document.getElementById("txt3").value = "";
 }
 
-// When button is clicked, execute the combine or reset
+// When button is clicked, execute the combine or reset functions
 document.querySelector("#combine").addEventListener("click", combine);
 document.querySelector("#reset").addEventListener("click", reset);
